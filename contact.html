@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Career Buddy</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">Career Buddy</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-contact">
+        <div class="hero-text">
+            <h1>Get in Touch</h1>
+            <p>We’re here to answer your questions and guide you towards your dream career.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-page">
+        <h2>Contact Information</h2>
+        <div class="contact-details">
+            <p><strong>Office Name:</strong> Inspire@BKC</p>
+            <p>
+                <strong>Address:</strong>
+                <a href="https://maps.app.goo.gl/E1JqevFR5gT1R7Cm8" target="_blank">
+                    G Block Rd, G Block BKC, Patthar Nagar, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051
+                </a>
+            </p>
+            <p><strong>Email:</strong> <a href="mailto:support@careerbuddy.com">support@careerbuddy.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+        <h2>Find Us on the Map</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.931390769046!2d72.860740515117!3d19.06635688709485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c90ddc49d8c5%3A0x59b5f2fd6b9b43d8!2sG%20Block%20Rd%2C%20G%20Block%20BKC%2C%20Patthar%20Nagar%2C%20Bandra%20Kurla%20Complex%2C%20Bandra%20East%2C%20Mumbai%2C%20Maharashtra%20400051!5e0!3m2!1sen!2sin!4v1691234567890"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form-section">
+        <h2>Send Us a Message</h2>
+        <div class="form-container">
+            <form id="contactForm" class="contact-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Contact Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit" class="btn-submit">Submit</button>
+                <p id="confirmation-msg">✅ Your response has been submitted!</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Career Buddy. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Confirmation -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent real submission
+            const msg = document.getElementById("confirmation-msg");
+            msg.classList.add("show");
+            this.reset(); // Clear form fields
+        });
+    </script>
+</body>
+</html>

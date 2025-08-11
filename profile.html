@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Your Mentors - Career Buddy</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" type="image/png" href="/Users/bhaveshhiratkar/CareerBuddyWebsite/images/logo.png.jpg">
+    <style>
+        /* Mentor Section Styles */
+        .mentors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .mentor-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .mentor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        }
+
+        .mentor-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .mentor-card h3 {
+            margin-bottom: 0.5rem;
+            color: #003366;
+        }
+
+        .mentor-card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="/Users/bhaveshhiratkar/CareerBuddyWebsite/images/logo.png.jpg" alt="Career Buddy Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="profile">
+            <h1>Meet Your Career Buddy Mentors</h1>
+            <div class="mentors">
+                <!-- Mentor 1 -->
+                <div class="mentor-card">
+                    <img src="images/Ganeshprasad_Sridharan.png.webp" alt="Ganeshprasad Sridharan">
+                    <h3>Ganeshprasad Sridharan</h3>
+                    <p>
+                        Ganeshprasad is an experienced career strategist with a strong background in leadership development 
+                        and industry mentoring. With years of guiding young professionals, he helps bridge the gap between 
+                        academic learning and practical workplace success.
+                    </p>
+                </div>
+
+                <!-- Mentor 2 -->
+                <div class="mentor-card">
+                    <img src="images/Achina Mayya.png.jpg" alt="Achina Mayya">
+                    <h3>Achina Mayya</h3>
+                    <p>
+                        Achina is a passionate mentor specializing in career growth, skill-building, and personal branding. 
+                        She has worked with diverse students and professionals, empowering them to discover their strengths 
+                        and thrive in competitive environments.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Career Buddy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

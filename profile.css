@@ -1,0 +1,142 @@
+/* ===== Header Section (same as contact.html) ===== */
+header {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffcc00;
+}
+
+/* ===== Main Profile Section ===== */
+.profile {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f8fc;
+}
+
+.profile h1 {
+    color: #003366;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Mentor container */
+.mentors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Mentor card styling */
+.mentor-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.mentor-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Mentor images */
+.mentor-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #003366;
+    transition: transform 0.3s ease;
+}
+
+.mentor-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Mentor names */
+.mentor-card h3 {
+    margin-bottom: 0.5rem;
+    color: #003366;
+    font-size: 1.2rem;
+}
+
+/* Mentor bios */
+.mentor-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Interactive hover overlay */
+.mentor-card::after {
+    content: "Click to Learn More";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 51, 102, 0.85);
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    transition: bottom 0.3s ease;
+}
+
+.mentor-card:hover::after {
+    bottom: 0;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .mentors {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
