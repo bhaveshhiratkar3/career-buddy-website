@@ -13,29 +13,58 @@
     }
     header, footer {
       background: #003366;
-      color: rgb(255, 255, 255);
+      color: white;
       text-align: center;
       padding: 1rem;
     }
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       background: white;
       padding: 2rem;
-      border-radius: 8px;
+      border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     h2 {
       color: #003366;
       margin-top: 1rem;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    th {
+      background: #e9f1ff;
+    }
     ul {
       margin-left: 1.25rem;
+    }
+    .testimonial {
+      background: #f1f8ff;
+      border-left: 5px solid #003366;
+      padding: 1rem;
+      margin-top: 1rem;
+      font-style: italic;
     }
     .note {
       font-size: 0.9rem;
       color: gray;
       margin-top: 1rem;
+    }
+    .checklist {
+      background: #f9f9f9;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-left: 4px solid #003366;
+    }
+    .checklist ul {
+      margin-left: 1rem;
     }
   </style>
 </head>
@@ -46,36 +75,57 @@
 </header>
 
 <main>
-  <h2>Team Member</h2>
-  <p><strong>Bhavesh Hiratkar</strong> — Full-stack Developer / Designer</p>
+  <!-- Team Table -->
+  <h2>Team Members</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Role</th>
+    </tr>
+    <tr>
+      <td>Bhavesh Hiratkar</td>
+      <td>Full-stack Developer / Designer</td>
+    </tr>
+  </table>
 
-  <h2>Project Overview</h2>
-  <p>Career Buddy is a student-focused platform offering career guidance, resources, and mentorship at no cost, designed to be mobile-friendly and accessible across India.</p>
-
-  <h2>Key Design Choices</h2>
+  <!-- Design Philosophy -->
+  <h2>Design Philosophy</h2>
+  <p>
+    Career Buddy was created to bridge the gap between students seeking career guidance 
+    and accessible online resources. The goal is to provide **clear navigation**, 
+    a **professional visual identity**, and **mobile-first responsiveness** so students 
+    can benefit anytime, anywhere.
+  </p>
   <ul>
-    <li>Simple navigation with clear CTAs</li>
-    <li>Card layout for services to improve scanability</li>
-    <li>Testimonials for trust-building</li>
-    <li>Contact form + Google Map for credibility</li>
+    <li><strong>Color Scheme:</strong> Navy blue for trust, light tones for readability.</li>
+    <li><strong>Layout:</strong> Minimal clicks to reach resources; clean card-based structure.</li>
+    <li><strong>Typography:</strong> Sans-serif fonts for clarity and accessibility.</li>
+    <li><strong>Responsiveness:</strong> Fully optimized for mobile, tablet, and desktop.</li>
   </ul>
 
-  <h2>Technical Notes</h2>
-  <ul>
-    <li>Responsive, semantic HTML & CSS</li>
-    <li>Optimized images for faster load times</li>
-    <li>Accessible color contrast & alt text</li>
-    <li>Single stylesheet for maintainability</li>
-  </ul>
+  <!-- Testimonial -->
+  <h2>Sample Testimonial</h2>
+  <div class="testimonial">
+    "Career Buddy gave me the confidence and direction I needed to land my first job. 
+    The guidance was practical and motivating."
+    <br><br>
+    <strong>- Satisfied User</strong>
+  </div>
+  <p class="note">
+    This testimonial could be placed on the homepage or in a dedicated “Success Stories” section for public viewing.
+  </p>
 
-  <h2>Future Improvements</h2>
-  <ul>
-    <li>Hindi/English language toggle</li>
-    <li>Mentor booking calendar</li>
-    <li>Analytics-based CTA optimization</li>
-  </ul>
-
-  <p class="note">This page is intentionally unlinked from navigation and is accessible only via direct URL.</p>
+  <!-- Checklist -->
+  <div class="checklist">
+    <h2>Faculty Requirement Checklist</h2>
+    <ul>
+      <li>✅ Team Table with member details</li>
+      <li>✅ Design Philosophy with goals, choices, reasoning</li>
+      <li>✅ Sample testimonial with placement suggestion</li>
+      <li>✅ Consistent design with main site</li>
+      <li>✅ Mobile-friendly, responsive layout</li>
+    </ul>
+  </div>
 </main>
 
 <footer>
